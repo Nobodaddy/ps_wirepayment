@@ -325,9 +325,9 @@ class Ps_Wirepayment extends PaymentModule
                     ),
                     array(
                         'type' => 'textarea',
-                        'label' => $this->trans('Information to the customer', array(), 'Modules.Wirepayment.Admin'),
+                        'label' => $this->trans('Customer Information', array(), 'Modules.Wirepayment.Admin'),
                         'name' => 'BANK_WIRE_CUSTOM_TEXT',
-                        'desc' => $this->trans('Information on the bank transfer (processing time, starting of the shipping...)', array(), 'Modules.Wirepayment.Admin'),
+                        'desc' => $this->trans('Information on bank transfer (processing time, start of the shipping...)', array(), 'Modules.Wirepayment.Admin'),
                         'lang' => true
                     ),
                     array(
@@ -335,9 +335,7 @@ class Ps_Wirepayment extends PaymentModule
                         'label' => $this->trans('Display the invitation to pay in the order confirmation page', array(), 'Modules.Wirepayment.Admin'),
                         'name' => self::FLAG_DISPLAY_PAYMENT_INVITE,
                         'is_bool' => true,
-                        'hint' => $this->trans('Your country\'s legislation may require you to send the invitation 
-                            to pay by email only. Disabling the option will hide the invitation 
-                            on the confirmation page.', array(), 'Modules.Wirepayment.Admin'),
+                        'hint' => $this->trans('Your country\'s legislation may require you to send the invitation to pay by email only. Disabling the option will hide the invitation on the confirmation page.', array(), 'Modules.Wirepayment.Admin'),
                         'values' => array(
                             array(
                                 'id' => 'active_on',
